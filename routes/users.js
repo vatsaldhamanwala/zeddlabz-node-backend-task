@@ -9,7 +9,7 @@ const users = [
 
 // Get all users
 UserRouter.get('/', (req, res) => {
-  res.json(users);
+  return res.json(users, { message: 'Users fetched successfully' });
 });
 
 // Create a new user
